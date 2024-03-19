@@ -31,7 +31,7 @@ TBD
 
 You can clone & deploy it to Vercel with one click:
 
-[![Deploy with Vercel](https://vercel.com/button)]https://vercel.com/import/project?template=https%3A%2F%2Fgithub.com%2Fmongodb-developer%2Fvercel-mongodb-next-fastapi-starter%2Ftree%2Fmain)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https%3A%2F%2Fgithub.com%2Fmongodb-developer%2Fvercel-mongodb-next-fastapi-starter%2Ftree%2Fmain)
 
 ## Developing Locally
 
