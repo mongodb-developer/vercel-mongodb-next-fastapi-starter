@@ -1,2 +1,3 @@
 fastapi==0.110.0
+pymongo
 uvicorn[standard]==0.28.0
