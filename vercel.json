@@ -8,6 +8,6 @@
       { "src": "/api/(.*)", "dest": "/api/$1" }
     ],
     "env": {
-      "MONGODB_ATLAS_URI": "@mongodb_atlas_uri"
+      "MONGODB_ATLAS_URI": ""
     }
   }
