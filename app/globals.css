@@ -32,3 +32,11 @@ body {
   justify-content: space-between;
   flex-direction: row;
 }
+
+.error-connection {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  color: red;
+}

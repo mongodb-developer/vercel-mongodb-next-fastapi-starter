@@ -14,6 +14,7 @@ export default function Home() {
 
 
   const [tasks, setTasks] = useState<Task[]>([]);
+  const [connectionStatus , setConnectionStatus] = useState<boolean>(false);
 
 
   
@@ -24,8 +25,15 @@ export default function Home() {
   function getTasks(){
     fetch('/api/tasks')
       .then(response => response.json())
-      .then(data => setTasks(data));
+      .then(data => {
+        setTasks(data);
+        setConnectionStatus(true);
+      }).catch((error) => {
+        console.error('Error:', error);
+        
+      });
   }
+
 
 
   /*
@@ -96,7 +104,7 @@ export default function Home() {
     <input type="text" id="search" name="search" placeholder="Search for tasks" className="w-1/2 p-2 mb-4 text-black" onChange={debouncedSearchTasks} />
     <div className="z-10 w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 font-mono text-sm">
         
-        {tasks.map((task) => (
+        { connectionStatus && tasks.map((task) => (
           <div key={task._id} className="flex flex-col  justify-between p-4 bg-white text-black shadow-lg rounded-lg ">
             <div className="flex task-head">
               <div className="ml-4">
@@ -116,7 +124,7 @@ export default function Home() {
               </div>
             </div>
          </div>
-        ))}
+        )) || <div className="error-connection">Connection to Atlas Errored, please verify your MONGODB_ATLAS_URI or IP access list settings</div>}
         
       </div>
     </main>
