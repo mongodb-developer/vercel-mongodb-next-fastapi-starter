@@ -40,7 +40,7 @@ You can clone & deploy it to Vercel with one click:
 ## Getting Started
 
 Create your MongoDB Deployment and get your connection URI:
-- Atlas quick start
+- [Atlas quick start](https://www.mongodb.com/docs/atlas/getting-started/)
 
 Set the needed environment variable :
 ```bash
@@ -74,9 +74,10 @@ The FastApi server will be running on [http://127.0.0.1:8000](http://127.0.0.1:8
 
 To learn more about Next.js, take a look at the following resources:
 
-- [MongoDB PyMongo](https://www.mongodb.com/docs/drivers/pymongo/) 
+- [MongoDB PyMongo](https://www.mongodb.com/docs/drivers/pymongo/) The official MongoDB Driver for Python.
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 - [FastAPI Documentation](https://fastapi.tiangolo.com/) - learn about FastAPI features and API.
+- [MongoDB for Artificial Intelligence](https://www.mongodb.com/use-cases/artificial-intelligence) - set of guides and resources to get started with GenAI and MongoDB.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
