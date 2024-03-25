@@ -2,12 +2,9 @@
     "version": 2,
     "builds": [
       { "src": "package.json", "use": "@vercel/next" },
-      { "src": "api/*.py", "use": "@vercel/python" }
+      { "src": "api/**/*.py", "use": "@vercel/python" }
     ],
     "routes": [
       { "src": "/api/(.*)", "dest": "/api/$1" }
-    ],
-    "env": {
-      "MONGODB_ATLAS_URI": ""
-    }
+    ]
   }
