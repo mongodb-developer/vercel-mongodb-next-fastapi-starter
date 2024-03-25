@@ -46,6 +46,9 @@ Set the needed environment variable :
 ```bash
 MONGODB_ATLAS_URI=<your_atlas_uri>
 ```
+
+If the code fails to create the Atlas Search index dynamically, use the Atlas guide to [create search index](https://www.mongodb.com/docs/atlas/atlas-search/create-index/) on `TaskDB.tasks` collection.
+
 First, install the dependencies:
 
 ```bash
