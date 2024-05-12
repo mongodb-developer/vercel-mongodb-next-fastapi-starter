@@ -7,7 +7,7 @@ def get_mongo_client():
     global db
     if db is None:
         uri = os.environ.get('MONGODB_ATLAS_URI')
-        db = MongoClient(uri)['TaskDB']
+        db = MongoClient(uri, appname="devrel.content.vercel")['TaskDB']
     return db
 
 def get_collection(collection_name):
